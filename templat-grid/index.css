@@ -1,0 +1,66 @@
+body{
+    background-color: aliceblue;
+}
+
+.h{
+  font-size: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.box{
+    height: 580px;
+    width: auto;
+    display: grid;
+    grid-template-areas: "menu header right"
+                          "menu main right"
+                          "menu footer right";
+  grid-template-rows: 80px 1fr 90px;              
+  grid-template-columns: 200px 1fr 200px;          
+            
+}
+
+.header{
+    background-color: red;
+    grid-area: header;
+}
+
+.menu{
+    background-color: white;
+    grid-area: menu;
+}
+
+.main{
+    background-color: lightpink;
+    grid-area: main;
+}
+
+.right{
+    background-color: yellow;
+    grid-area: right;
+}
+
+.footer{
+    background-color: green;
+    grid-area: footer;
+}
+
+.menu .menu1{
+grid-area: menu1;
+}
+.menu1 img{
+    width: 200px;
+    height:200px;
+}
+
+.menu .menu2{
+    background-color: yellow;
+    grid-area: menu2;
+    text-align: center;
+}
+
+.menu3{
+    background-color: greenyellow;
+    grid-area: menu3;
+}
